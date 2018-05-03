@@ -1,4 +1,4 @@
-package com.moonrovers.test.com.test.model;
+package com.moonrovers.test.model;
 
 import com.moonrovers.main.model.Direction;
 
