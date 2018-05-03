@@ -1,4 +1,4 @@
-package com.moonrovers.models;
+package com.moonrovers.main.model;
 
 public class Plateau {
 
