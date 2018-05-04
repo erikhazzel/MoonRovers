@@ -2,9 +2,12 @@ package com.moonrovers.main.model;
 
 public class Coordinate {
 
-    /*
-     * TODO:
-     *  x-coordinate
-     *  y-coordinate
-     */
+    private int xCoordinate;
+    private int yCoordinate;
+
+    public Coordinate(int xCoordinate, int yCoordinate) {
+        this.xCoordinate = xCoordinate;
+        this.yCoordinate = yCoordinate;
+    }
+
 }
