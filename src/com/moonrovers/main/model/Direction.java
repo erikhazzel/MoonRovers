@@ -44,7 +44,7 @@ public class Direction {
         }
     }
 
-    private void turnLeft() {
+    public void turnLeft() {
         switch (direction) {
             case NORTH:
                 this.direction = WEST;
@@ -64,7 +64,7 @@ public class Direction {
 
     }
 
-    private void turnRight() {
+    public void turnRight() {
         switch (direction) {
             case NORTH:
                 this.direction = EAST;

@@ -10,4 +10,17 @@ public class Coordinate {
         this.yCoordinate = yCoordinate;
     }
 
+    public int getxCoordinate() {
+        return xCoordinate;
+    }
+
+    public int getyCoordinate() {
+        return yCoordinate;
+    }
+
+
+    public void updateCoordinate(final int xCoordinate, final int yCoordinate){
+        this.xCoordinate = xCoordinate;
+        this.yCoordinate = yCoordinate;
+    }
 }
