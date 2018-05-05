@@ -18,4 +18,11 @@ public class Plateau {
         return topRightCoordinate;
     }
 
+    public boolean withinPlateau(final Coordinate roverCoordinate){
+        return (roverCoordinate.getyCoordinate() > bottomLeftCoordinate.getyCoordinate()
+            && roverCoordinate.getxCoordinate() > bottomLeftCoordinate.getxCoordinate())
+                && (roverCoordinate.getyCoordinate() < topRightCoordinate.getyCoordinate()
+                && roverCoordinate.getxCoordinate() < topRightCoordinate.getxCoordinate());
+    }
+
 }

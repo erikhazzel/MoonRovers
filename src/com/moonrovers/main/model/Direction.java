@@ -10,7 +10,7 @@ public class Direction {
     private static final int SOUTH = 2;
     private static final int WEST = 3;
 
-    private int direction;
+    int direction;
 
     public Direction(String directionArg) {
         switch (directionArg.toUpperCase()) {
@@ -103,6 +103,10 @@ public class Direction {
                 throw new IllegalArgumentException("This shouldnt happen :(");
         }
         return shortDirection;
+    }
+
+    public int getDirection() {
+        return direction;
     }
 
 }

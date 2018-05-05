@@ -2,8 +2,8 @@ package com.moonrovers.main.model;
 
 public class Coordinate {
 
-    private int xCoordinate;
-    private int yCoordinate;
+    private Integer xCoordinate;
+    private Integer yCoordinate;
 
     public Coordinate(int xCoordinate, int yCoordinate) {
         this.xCoordinate = xCoordinate;
@@ -20,7 +20,11 @@ public class Coordinate {
 
 
     public void updateCoordinate(final int xCoordinate, final int yCoordinate){
-        this.xCoordinate = xCoordinate;
-        this.yCoordinate = yCoordinate;
+        this.xCoordinate = this.xCoordinate + xCoordinate;
+        this.yCoordinate = this.yCoordinate + yCoordinate;
+    }
+
+    public String getCoordinate(){
+        return xCoordinate.toString() + " " + yCoordinate.toString();
     }
 }

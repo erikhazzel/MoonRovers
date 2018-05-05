@@ -1,24 +1,28 @@
-package com.moonrovers.main;
+package com.moonrovers.test.model;
 
 import com.moonrovers.main.model.Coordinate;
 import com.moonrovers.main.model.Direction;
 import com.moonrovers.main.model.Plateau;
 import com.moonrovers.main.model.Rover;
+import org.testng.annotations.Test;
 
-public class Main {
+import static org.testng.Assert.*;
 
-    public static void main(String[] args) {
+public class RoverTest {
+
+    @Test
+    public void testRunRover() {
         Plateau plateau = new Plateau(
                 new Coordinate(0,0), new Coordinate(5,5));
 
         Rover rover1 = new Rover(new Coordinate(1,2), new Direction("N"), plateau);
         rover1.run("LMLMLMLMM");
 
+        assertEquals(rover1.getPosition(), "1 3 N");
+
         Rover rover2 = new Rover(new Coordinate(3,3), new Direction("E"), plateau);
         rover2.run("MMRMMRMRRM");
 
-
-	    System.out.println(rover1.getPosition());
-	    System.out.println(rover2.getPosition());
+        assertEquals(rover2.getPosition(), "5 1 E");
     }
 }
