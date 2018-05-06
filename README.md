@@ -1,6 +1,10 @@
 # MoonRovers
 
-## Description
+## How to run
+
+The assignment can be run be either running Main.main() or RoverTest.testRunRover().
+
+## Assignment Description
 
 A squad of robotic rovers are to be landed by NASA on a plateau on the Moon. This plateau, which is curiously rectangular, must be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to send back to Earth.
 
