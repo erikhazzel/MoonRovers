@@ -42,7 +42,7 @@ public class Rover {
   }
 
   private void move() {
-    switch (this.direction.getDirection()) {
+    switch (this.direction.toInteger()) {
       case 0:
         updateCoordinate(0, 1);
         break;
@@ -72,7 +72,6 @@ public class Rover {
 
   }
 
-
   public String getPosition() {
     return this.coordinate.toString() + " " + this.direction.toShortString();
   }
@@ -82,7 +81,6 @@ public class Rover {
     this.direction = direction;
   }
 
-  //TODO: Hur ska jag göra med denna?
   private boolean onPlateau(final Coordinate coordinate) {
     return plateau.withinPlateau(coordinate);
   }

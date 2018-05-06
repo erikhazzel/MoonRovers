@@ -106,7 +106,7 @@ public class Direction {
     return shortDirection;
   }
 
-  public int getDirection() {
+  public Integer toInteger() {
     return direction;
   }
 
