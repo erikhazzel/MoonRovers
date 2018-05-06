@@ -24,10 +24,10 @@ public class Plateau {
    * @return boolean
    */
   public boolean withinPlateau(final Coordinate roverCoordinate) {
-    return (roverCoordinate.getyCoordinate() >= bottomLeftCoordinate.getyCoordinate()
-        && roverCoordinate.getxCoordinate() >= bottomLeftCoordinate.getxCoordinate())
-        && (roverCoordinate.getyCoordinate() <= topRightCoordinate.getyCoordinate()
-        && roverCoordinate.getxCoordinate() <= topRightCoordinate.getxCoordinate());
+    return (roverCoordinate.getyCoordinate() >= getBottomLeftCoordinate().getyCoordinate()
+        && roverCoordinate.getxCoordinate() >= getBottomLeftCoordinate().getxCoordinate())
+        && (roverCoordinate.getyCoordinate() <= getTopRightCoordinate().getyCoordinate()
+        && roverCoordinate.getxCoordinate() <= getTopRightCoordinate().getxCoordinate());
   }
 
 }
