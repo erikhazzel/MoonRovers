@@ -1,24 +1,24 @@
 package com.moonrovers.test.model;
 
-import com.moonrovers.main.model.Direction;
+import static org.testng.Assert.assertEquals;
 
-import static org.testng.Assert.*;
+import com.moonrovers.main.model.Direction;
 
 public class DirectionTest {
 
-    @org.testng.annotations.Test
-    public void testTurnLeft() {
-        Direction direction = new Direction("N");
-        direction.turn("L");
+  @org.testng.annotations.Test
+  public void testTurnLeft() {
+    Direction direction = new Direction("N");
+    direction.turnLeft();
 
-        assertEquals(direction.getShortDirection(), "W");
-    }
+    assertEquals(direction.toShortString(), "W");
+  }
 
-    @org.testng.annotations.Test
-    public void testTurnRight() {
-        Direction direction = new Direction("E");
-        direction.turn("R");
+  @org.testng.annotations.Test
+  public void testTurnRight() {
+    Direction direction = new Direction("E");
+    direction.turnRight();
 
-        assertEquals(direction.getShortDirection(), "S");
-    }
+    assertEquals(direction.toShortString(), "S");
+  }
 }
