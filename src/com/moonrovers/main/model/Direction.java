@@ -10,7 +10,7 @@ public class Direction {
   private static final int SOUTH = 2;
   private static final int WEST = 3;
 
-  int direction;
+  private int direction;
 
   /**
    * Constructor to create Direction.
